@@ -1,11 +1,11 @@
-fetch("https://www.omdbapi.com/?apikey=8569808c&type=movie&s=super man")
+fetch("http://www.omdbapi.com/?apikey=cf68d9b&type=movie&s=super man")
     .then((res) => res.json())
     .then((data) => {
 
         var movieContainer = document.getElementById("movies");
         data["Search"].map(parsedData);
         function parsedData(movie) {
-            if (movie.Poster != "N/A") {
+            //if (movie.Poster != "N/A") {
                 
                 
                 
@@ -35,7 +35,7 @@ fetch("https://www.omdbapi.com/?apikey=8569808c&type=movie&s=super man")
 
             // Append the movie card to the container
             movieContainer.appendChild(movieCard);
-        }
+        //}
         }
     });
 

@@ -7,7 +7,7 @@ body {
 #header {
     width: auto;
     height: auto;
-    background: #0084ff;
+    background: #000000;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -19,7 +19,8 @@ body {
 }
 #searching{
     display: flex;
-    justify-content: flex-end;
+    justify-content: right;
+    
 }
 
 #search{
@@ -34,6 +35,9 @@ body {
 
 #sitetitle{
     display: flex;
+    justify-content: start;
+    color: #fff;
+    font-size: 3rem;
     /* align-content: center; */
 }
 #sitetitle:hover{
@@ -45,7 +49,7 @@ body {
 
 /* Work Start  */
 #work {
-    background-color: #004d29;
+    background-color: #00214d;
     height:auto;
     width: auto;
     margin-bottom: -50px;
@@ -68,7 +72,7 @@ body {
 
 #movies {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     margin: 50px;
     
 }
