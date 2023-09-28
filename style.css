@@ -5,12 +5,15 @@ body {
 
 /* Header Start */
 #header {
+    display: flex;
+    flex-direction: row;
     width: auto;
     height: auto;
     background: #000000;
     position: sticky;
     top: 0;
     z-index: 1;
+    justify-content: space-between;
 }
 
 #header input {
