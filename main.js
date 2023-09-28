@@ -40,9 +40,9 @@ fetch("http://www.omdbapi.com/?apikey=cf68d9b&type=movie&s=super man")
     });
 
 async function searchResult() {
-    const search_query = document.getElementById("search").value;
+    const search_query = document.getElementById("title").value;
     if (search_query) {
-        await fetch(`https://www.omdbapi.com/?apikey=8569808c&type=movie&s=${search_query}`)
+        await fetch(`https://www.omdbapi.com/?apikey=cf68d9b&type=movie&s=${search_query}`)
             .then((res) => res.json())
             .then((data) => {
                 var movieContainer = document.getElementById("movies");
@@ -97,3 +97,23 @@ async function searchResult() {
     }
 }
 
+function yearFilter() {
+    var yearSelect = document.getElementById("year");
+    var selectedYear = yearSelect.value;
+    console.log(selectedYear);
+
+
+    var movieContainer = document.getElementById("movies");
+
+    var movieYearElements = movieContainer.querySelectorAll(".movie-year");
+
+    for (var i = 0; i < movieYearElements.length; i++) {
+        var movieYear = movieYearElements[i];
+        var yearText = movieYear.textContent;
+        var year = parseInt(yearText.replace("Year: ", ""));
+
+        if (year < selectedYear) {
+            movieContainer.removeChild(movieYear.parentElement);
+        }
+    }
+}

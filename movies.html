@@ -17,9 +17,11 @@
             <span id="sitetitle">Movies for You</span>
 
             <div id="searching">
-                <input type="search" id="search" placeholder="Enter Title here" autofocus>
-                <input type="search" id="search" placeholder="Enter Year here" autofocus>
+                <label for="search">Title:</label>
+                <input type="search" id="title" placeholder="Enter Movie Title " autofocus>
                 <input type="submit" id="inputbtn" onclick="searchResult()" value="Search">
+                <label for="search">Filter:</label>
+                <input type="text" id="year" placeholder="Enter Year to Filter" onchange="yearFilter()">
             </div>
         </div>
     <!-- Header End -->
