@@ -96,7 +96,7 @@ cursor: pointer;
 
 img {
     width: auto;
-    height: auto;
+    height: 500px;
     margin: 10px;
     overflow-clip-margin: content-box;
     overflow: clip;

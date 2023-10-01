@@ -1,4 +1,4 @@
-fetch("http://www.omdbapi.com/?apikey=cf68d9b&type=movie&s=super man")
+fetch("http://www.omdbapi.com/?apikey=cf68d9b&type=movie&s=Iron Man")
     .then((res) => res.json())
     .then((data) => {
 
